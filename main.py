@@ -57,7 +57,8 @@ def send_commits(send_date):
     for column in PARSED_INPUT:
         for char in column:
             if char != ' ':
-                git_push(send_date.strftime('%Y.%m.%d'))
+                # git_push(send_date.strftime('%Y.%m.%d'))
+                print(send_date.strftime('%Y.%m.%d'))
             send_date += timedelta(1)
         send_date += timedelta(6 - send_date.weekday() % 7)  # no need to check if its already sunday, only progresses if not sunday
 
@@ -71,7 +72,7 @@ def git_push(commit_date):
         raise Exception('Could not detect platform information.')
 
     os.system('git add test')
-    os.system(f'git commit -m test --date {commit_date}')
+    os.system(f'git commit -m test --date {commit_date} --allow-empty')
     os.system('git push origin master --force')
 
 
