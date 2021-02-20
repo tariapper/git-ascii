@@ -23,7 +23,7 @@
     Creating ASCII Art using the contributions widget
     <br />
     <br />
-    <a href="https://github.com/tariapper/git-ascii">View Demo</a>
+    <a href="https://github.com/tariapper/git-ascii/wiki">Read Docs</a>
     ·
     <a href="https://github.com/tariapper/git-ascii/issues">Report Bug</a>
     ·
@@ -64,8 +64,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 While staring at my sparse contributions page, I wondered if there was a way for me to create art out of these little green boxes, similar to how ASCII art is created out of text. In my research, I discovered the ability to commit to the past as well as the fact that this idea had already been done. Multiple times. Nonetheless, I've decided to create my own version, in hopes that this might re-motivate me into working on my side projects and making my contributions page green in less exploitative ways.
 
 This project uses python's datetime to calculate the date that each commit must be sent. It uses os to send git commands to the terminal and exploits git's ability to create commits to the past to create art.
@@ -96,22 +94,21 @@ To get a local copy up and running follow these simple steps.
 
 ### Installation
 
-1. Create a new github repository and download a local copy
+1. Create a copy of this repository
+
+<a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="https://docs.github.com/assets/images/help/repository/use-this-template-button.png" alt="Use this template">
+  </a>
    
 2. Clone the repo
    ```sh
-   git clone https://github.com/tariapper/git-ascii.git
-   ```
-   
-3. Copy main.py and the inputs folder into your new repo
-   ```sh
-   cp main.py inputs ../[NAME-OF-YOUR-REPO] -r
+   git clone https://github.com/[YOUR-USERNAME]/[YOUR-REPO-NAME].git
    ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Naviage to the local repo and run the following line in the terminal
+Navigate to the local repo and run the following line in the terminal
 
     python3 main.py -i inputs/hello.txt
 
@@ -122,13 +119,13 @@ To remove the commits, revert the head of the repo to before the automated commi
    ```
 or delete the repository.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/tariapper/git-ascii/wiki)_
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
-* Improve ease of use (remove need to copy files from one repo to another)
+* ~~Improve ease of use (remove need to copy files from one repo to another)~~
 * Make use of the contribution page's full color palette
 * Decrease runtime
 * Create more sample inputs
@@ -140,7 +137,7 @@ See the [open issues](https://github.com/tariapper/git-ascii/issues) for a list 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
