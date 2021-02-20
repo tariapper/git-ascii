@@ -22,8 +22,6 @@
   <p align="center">
     Creating ASCII Art using the contributions widget
     <br />
-    <a href="https://github.com/tariapper/git-ascii"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/tariapper/git-ascii">View Demo</a>
     ·
@@ -68,13 +66,19 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+While staring at my sparse contributions page, I wondered if there was a way for me to create art out of these little green boxes, similar to how ASCII art is created out of text. In my research, I discovered the ability to commit to the past as well as the fact that this idea had already been done. Multiple times. Nonetheless, I've decided to create my own version, in hopes that this might re-motivate me into working on my side projects and making my contributions page green in less exploitative ways.
 
+This project uses python's datetime to calculate the date that each commit must be sent. It uses os to send git commands to the terminal and exploits git's ability to create commits to the past to create art.
+
+Sample inputs are stored in the /inputs folder. Each non-whitespace character represents a filled-in block on the GitHub contributions page. Only the first 7 lines and 53 characters of each line are parsed.
+
+<!--
 ### Built With
 
 * []()
 * []()
 * []()
-
+-->
 
 
 <!-- GETTING STARTED -->
@@ -84,24 +88,24 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * python
+* git
 <!--  ```sh
   npm install npm@latest -g
   ```-->
 
 ### Installation
 
-1. Fork the repo through the terminal
-   ```sh
-   curl -d '' https://api.github.com/repos/tariapper/git-ascii/forks
-   ```
-   or through a browser [using the Fork button](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-
-
+1. Create a new github repository and download a local copy
+   
 2. Clone the repo
    ```sh
-   git clone https://github.com/YOUR-GIT-USERNAME/git-ascii.git
+   https://github.com/tariapper/git-ascii.git
+   ```
+   
+3. Copy main.py and the inputs folder into your new repo
+   ```sh
+   cp main.py inputs ../[NAME-OF-YOUR-REPO] -r
    ```
 
 <!-- USAGE EXAMPLES -->
@@ -111,7 +115,7 @@ Naviage to the local repo and run the following line in the terminal
 
     python3 main.py -i inputs/hello.txt
 
-To remove the changes, revert the head of the repo to before the automated commits
+To remove the commits, revert the head of the repo to before the automated commits
    ```
    git reset [name of commit here]
    git push origin master -f
@@ -124,6 +128,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
+* Improve ease of use (remove need to copy files from one repo to another)
 * Make use of the contribution page's full color palette
 * Decrease runtime
 * Create more sample inputs
