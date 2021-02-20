@@ -100,7 +100,7 @@ To get a local copy up and running follow these simple steps.
    
 2. Clone the repo
    ```sh
-   https://github.com/tariapper/git-ascii.git
+   git clone https://github.com/tariapper/git-ascii.git
    ```
    
 3. Copy main.py and the inputs folder into your new repo
