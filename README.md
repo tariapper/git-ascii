@@ -20,7 +20,7 @@
   <h3 align="center">git-ascii</h3>
 
   <p align="center">
-    Creating ASCII Art using the contributions widget
+    Creating "ASCII Art" using the contributions heatmap
     <br />
     <br />
     <a href="https://github.com/tariapper/git-ascii/wiki">Read Docs</a>
