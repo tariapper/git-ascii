@@ -112,12 +112,7 @@ Navigate to the local repo and run the following line in the terminal
 
     python3 main.py -i inputs/hello.txt
 
-To remove the commits, revert the head of the repo to before the automated commits
-   ```
-   git reset [name of commit here]
-   git push origin master -f
-   ```
-or delete the repository.
+To remove the commits, delete the repository.
 
 _For more examples, please refer to the [Documentation](https://github.com/tariapper/git-ascii/wiki)_
 
