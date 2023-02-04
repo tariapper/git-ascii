@@ -66,6 +66,7 @@
 
 This project uses python's datetime to calculate the date that each commit must be sent. It uses os to send git commands to the terminal and exploits git's ability to create commits to the past (and future) to create art.
 
+
 Sample inputs are stored in the /inputs folder. Each non-whitespace character represents a filled-in block on the GitHub contributions page. Only the first 7 lines and 53 characters of each line are parsed.
 
 <!--
