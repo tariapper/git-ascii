@@ -64,7 +64,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project uses python's datetime to calculate the date that each commit must be sent. It uses os to send git commands to the terminal and exploits git's ability to create commits to the past to create art.
+This project uses python's datetime to calculate the date that each commit must be sent. It uses os to send git commands to the terminal and exploits git's ability to create commits to the past (and future) to create art.
+
 
 Sample inputs are stored in the /inputs folder. Each non-whitespace character represents a filled-in block on the GitHub contributions page. Only the first 7 lines and 53 characters of each line are parsed.
 
@@ -119,8 +120,8 @@ _For more examples, please refer to the [Documentation](https://github.com/taria
 <!-- ROADMAP -->
 ## Roadmap
 * ~~Improve ease of use (remove need to copy files from one repo to another)~~
-* Make use of the contribution page's full color palette
-* Decrease runtime
+* _WIP_ Make use of the contribution page's full color palette
+* Decrease runtime (create git tree manually as opposed to using git commits)
 * Create more sample inputs
 
 See the [open issues](https://github.com/tariapper/git-ascii/issues) for a list of proposed features (and known issues).
