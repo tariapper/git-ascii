@@ -64,8 +64,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-While staring at my sparse contributions page, I wondered if there was a way for me to create art out of these little green boxes, similar to how ASCII art is created out of text. In my research, I discovered the ability to commit to the past as well as the fact that this idea had already been done. Multiple times. Nonetheless, I've decided to create my own version, in hopes that this might re-motivate me into working on my side projects and making my contributions page green in less exploitative ways.
-
 This project uses python's datetime to calculate the date that each commit must be sent. It uses os to send git commands to the terminal and exploits git's ability to create commits to the past to create art.
 
 Sample inputs are stored in the /inputs folder. Each non-whitespace character represents a filled-in block on the GitHub contributions page. Only the first 7 lines and 53 characters of each line are parsed.
