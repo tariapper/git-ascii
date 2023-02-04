@@ -90,7 +90,7 @@ def git_commit(commit_date):
 if __name__ == '__main__':
     args = get_program_arguments()
     PARSED_INPUT = parse_input(args.input)
-    # send_commits(get_sunday(args.start))
-    # os.system('git pull')
-    # os.system('git push origin master --force')
-    # print("Finished. Refresh your profile page to see your new creation!")
+    send_commits(get_sunday(args.start))
+    os.system('git pull')
+    os.system('git push origin master --force')
+    print("Finished. Refresh your profile page to see your new creation!")
